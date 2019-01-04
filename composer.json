@@ -23,5 +23,10 @@
         "psr-4": {
             "Ufo\\Modules\\Stub\\": "src/"
         }
+    },
+    "scripts": {
+        "post-update-cmd": [
+            "php -r \"var_dump(__DIR__);\" >> composer.log"
+        ]
     }
 }
