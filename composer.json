@@ -1,0 +1,27 @@
+{
+    "name": "enikeishik/ufmstub",
+    "type": "library",
+    "description": "UFO Framework Stub module.",
+    "keywords": ["ufo","framework","module","web"],
+    "homepage": "https://github.com/enikeishik/ufmstub",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Enikeishik",
+            "email": "enikeishik@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2"
+    },
+    "require-dev": {
+        "codeception/codeception": "^2.5.1",
+        "symfony/var-dumper": "~4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ufo\\Modules\\Stub\\": "src/"
+        }
+    }
+}
