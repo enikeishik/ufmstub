@@ -19,7 +19,7 @@
         <b><?=$item->title?></b><br>
         <?=$item->text?>
         </p>
-    <?php endfor; ?>
+    <?php endforeach; ?>
 <?php elseif (!empty($item)): ?>
     <h2><?=$section->title?></h2>
     <h1><?=$item->title?></h1>
