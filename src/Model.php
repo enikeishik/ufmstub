@@ -36,7 +36,7 @@ class Model extends BaseModel
      */
     public function getItem(): ?\stdClass
     {
-        if (empty($this->params['itemId'])) {
+        if (empty($this->params['itemId']->value)) {
             return null;
         }
         

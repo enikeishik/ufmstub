@@ -24,9 +24,7 @@ class Controller extends BaseController
     protected function setData(Section $section = null): void
     {
         parent::setData($section);
-        $this->data = [
-            'content' => 'Stub module output', 
-        ];
+        $this->data['content'] = 'Stub module output';
     }
     
     /**
