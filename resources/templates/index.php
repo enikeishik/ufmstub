@@ -12,7 +12,11 @@
 <title><?=$section->title?></title>
 </head>
 <body>
-<?php if (!empty($items) && is_array($items) && count($items) > 0): ?>
+<?php if (!empty($item)): ?>
+    <h2><?=$section->title?></h2>
+    <h1><?=$item->title?></h1>
+    <p><?=$item->text?></p>
+<?php elseif (!empty($items) && is_array($items) && count($items) > 0): ?>
     <h1><?=$section->title?></h1>
     <?php foreach ($items as $item): ?>
         <p>
@@ -20,10 +24,6 @@
         <?=$item->text?>
         </p>
     <?php endforeach; ?>
-<?php elseif (!empty($item)): ?>
-    <h2><?=$section->title?></h2>
-    <h1><?=$item->title?></h1>
-    <p><?=$item->text?></p>
 <?php else: ?>
     <p>Content not present for this page.</p>
 <?php endif; ?>
