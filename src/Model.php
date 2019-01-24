@@ -7,7 +7,7 @@
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
 
-namespace Ufo\Modules\Enikeishik\Stub;
+namespace Ufo\Modules\Enikeishik\Ufmstub;
 
 use Ufo\Modules\Model as BaseModel;
 
@@ -34,7 +34,7 @@ class Model extends BaseModel
      * Some model method to get one item data.
      * @return ?stdClass
      */
-    public function getItem(): ?stdClass
+    public function getItem(): ?\stdClass
     {
         if (empty($this->params['itemId'])) {
             return null;

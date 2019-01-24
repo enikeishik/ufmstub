@@ -7,7 +7,7 @@
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
 
-namespace Ufo\Modules\Enikeishik\Stub;
+namespace Ufo\Modules\Enikeishik\Ufmstub;
 
 use Ufo\Core\Result;
 use Ufo\Core\Section;
@@ -21,13 +21,12 @@ class Controller extends BaseController
     /**
      * @see parent
      */
-    public function compose(Section $section = null): Result
+    protected function setData(Section $section = null): void
     {
+        parent::setData($section);
         $this->data = [
-            'section' => $section, 
             'content' => 'Stub module output', 
         ];
-        return new Result($this->getView());
     }
     
     /**
