@@ -21,7 +21,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Ufo\\Modules\\Stub\\": "src/"
+            "Ufo\\Modules\\Enikeishik\\Stub\\": "src/"
         }
     }
 }

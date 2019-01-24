@@ -7,7 +7,7 @@
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
 
-namespace Ufo\Modules\Stub;
+namespace Ufo\Modules\Enikeishik\Stub;
 
 use Ufo\Modules\Model as BaseModel;
 
