@@ -13,6 +13,7 @@ use Ufo\Core\Result;
 use Ufo\Core\Section;
 use Ufo\Modules\Controller as BaseController;
 use Ufo\Modules\ModelInterface;
+use Ufo\Modules\View;
 use Ufo\Modules\ViewInterface;
 
 class Controller extends BaseController
