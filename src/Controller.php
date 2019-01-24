@@ -7,19 +7,16 @@
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
 
-namespace Ufo\Modules\Stub;
+namespace Ufo\Modules\Enikeishik\Stub;
 
 use Ufo\Core\Result;
 use Ufo\Core\Section;
 use Ufo\Modules\Controller as BaseController;
-use Ufo\Modules\View;
 
 class Controller extends BaseController
 {
     /**
-     * Main controller method.
-     * @param Section $section = null
-     * @return Result
+     * @see parent
      */
     public function compose(Section $section = null): Result
     {
@@ -28,5 +25,25 @@ class Controller extends BaseController
             'content' => 'Stub module output', 
         ];
         return new Result($this->getView());
+    }
+    
+    /**
+     * @see parent
+     */
+    protected function getModel(): ModelInterface
+    {
+        $model = new Model();
+        $model->inject($this->container);
+        return $model;
+    }
+    
+    /**
+     * @see parent
+     */
+    protected function getView(): ViewInterface
+    {
+        $view = new View('index', $this->data);
+        $view->inject($this->container);
+        return $view;
     }
 }
