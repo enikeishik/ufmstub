@@ -12,6 +12,8 @@ namespace Ufo\Modules\Enikeishik\Stub;
 use Ufo\Core\Result;
 use Ufo\Core\Section;
 use Ufo\Modules\Controller as BaseController;
+use Ufo\Modules\ModelInterface;
+use Ufo\Modules\ViewInterface;
 
 class Controller extends BaseController
 {
