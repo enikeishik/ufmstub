@@ -12,7 +12,7 @@ namespace Ufo\Modules\Enikeishik\Ufmstub;
 use Ufo\Modules\Model as BaseModel;
 
 /**
- * Module level model base class.
+ * Module model class.
  */
 class Model extends BaseModel
 {
